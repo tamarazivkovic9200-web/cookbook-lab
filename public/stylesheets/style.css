@@ -1,0 +1,132 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #faf7f2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+nav {
+  background-color: #e9d8a6;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #6b705c;
+}
+
+/* ------------------------------
+   PANTRY LIST
+------------------------------ */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  margin: 10px auto;
+  width: 60%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* ------------------------------
+   BUTTONS & LINKS
+------------------------------ */
+.btn,
+button {
+  display: inline-block;
+  background-color: #cb997e;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+button:hover {
+  background-color: #b5838d;
+  transform: scale(1.05);
+}
+
+/* small version (Edit) */
+.btn-small {
+  background-color: #6b705c;
+  font-size: 0.9em;
+  padding: 5px 10px;
+}
+
+.btn-small:hover {
+  background-color: #a5a58d;
+}
+
+/* delete version */
+.btn-delete {
+  background-color: #bc4749;
+}
+
+.btn-delete:hover {
+  background-color: #a63d40;
+}
+
+/* ------------------------------
+   FORMS (Add/Edit)
+------------------------------ */
+.form-container {
+  background: #fff;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.styled-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.styled-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.styled-form input:focus {
+  outline: none;
+  border-color: #cb997e;
+}
