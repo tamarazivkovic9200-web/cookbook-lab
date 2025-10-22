@@ -5,6 +5,7 @@ const foodSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+
 });
 
 const userSchema = new mongoose.Schema({
@@ -16,7 +17,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  pantry: [foodSchema], // embed foodSchema as an array
+  pantry: [foodSchema], 
 });
 
 const User = mongoose.model('User', userSchema);
